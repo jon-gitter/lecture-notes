@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Class 01</title>
+  <!--style is used to incorporate css file-->
+  <style>
+    body {
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- good semantic to have only h1 in the header element for screen readers-->
+    <h1>Class 01 Demo</h1>
+  </header>
+  <main>
+    <p style="background-color: blue">What is your name?</p>
+  </main>
+  <footer>
+
+  </footer>
+  <!--have script element at the bottom, helps with the page for .js file-->
+  <script>
+    console.log('hello world');
+    let responseOne = prompt('What is your name?');
+
+    alert('Welcome ' + responseOne + '!');
+    console.log('User entered in ' + responseOne);
+  </script>
+</body>
+
+</html>
