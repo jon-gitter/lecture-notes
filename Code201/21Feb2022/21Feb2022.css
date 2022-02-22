@@ -1,0 +1,58 @@
+.grid-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* grid-template-rows: 300px 100px; */
+  grid-auto-rows: minmax(200px, auto);
+
+  row-gap: 10px;
+  column-gap: 20px;
+  /* shorthand if both column and gap are the same */
+  gap: 30px;
+
+
+  /* takes in strings  */
+  grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+}
+
+/* feeding it the string from line 17 */
+.grid-item1{
+  grid-area: header; 
+  /* can start and end on each line, very last line is -1 could substitute the 4 below for -1, or you could do a 3 */
+  grid-column: 1/4;
+  /* grid row to the last line using -1 */
+  grid-row: 1/-1;
+
+  /* can nest flex into grids must have images or boxes inside  */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* feeding it the string from line 18 */
+.grid-item2{
+  grid-area: sidebar;
+  /* can used to take up more rows, where to start and where to end */
+  grid-row: 2/5;
+
+  /* putting vertical images inside grid column */
+  display: flex;
+  flex-direction: column;
+}
+
+/* feeding it the string from line 18 */
+.grid-item3{
+  grid-area: content;
+  /* shorter example of taking up more rows */
+  grid-row: 2/4;
+}
+
+
+.grid-container div {
+  border: 2px solid black;
+  font-size: 1.5em;
+  padding: 30px;
+}
