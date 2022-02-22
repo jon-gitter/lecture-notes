@@ -60,7 +60,7 @@ function renderImgs() {
 
   //need the validation to make sure they do not show up in the same round
   // note: lab will require you to have 3 unique images per round
-  // need a while loop to keep looping in case the two randoms numbers are not the same, an if statement could still yield the two same pictures
+  // need a while loop to keep looping in case the two randoms numbers are not the same, using an if statement could still yield the two same pictures
   // hint: consider using a container to store your random indexes and then validate if there are 3 unique numbers in that container
   while (goatOneIndex === goatTwoIndex) {
     goatTwoIndex = getRandomIndex();
@@ -99,7 +99,7 @@ function handleClick(event) {
 
   // once voting has round completed - need to stop the clicks
   if (votesAllowed === 0) {
-    myContainer.removeEventListener('clicks', handleClick);
+    myContainer.removeEventListener('click', handleClick);
   }
 }
 
