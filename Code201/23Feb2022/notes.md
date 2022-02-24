@@ -51,7 +51,7 @@
   - `let parsedStuff = JSON.parse(stuffImGettingOut);` - parse so our code can read it again
     - parse = unstringified when bringing something out of local storage
 
-- when you stringify an object from constuctor, it strips away what is instantiated from that constructor.  FYI ***Stingifing something can't stringify a function***
+- when you stringify an object from constuctor, it strips away what is instantiated from that constructor.  FYI ***Stringifying something can't stringify a function***
 
 
 - becomes a special string(JSON string) after we stringify something. so ""
