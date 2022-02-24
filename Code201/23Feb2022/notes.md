@@ -51,4 +51,14 @@
   - `let parsedStuff = JSON.parse(stuffImGettingOut);` - parse so our code can read it again
     - parse = unstringified when bringing something out of local storage
 
-- when you stringify an object from constuctor, it strips away what is instantiated from that constructor.  It loses the methods, can't string a function.
+- when you stringify an object from constuctor, it strips away what is instantiated from that constructor.  FYI ***Stingifing something can't stringify a function***
+
+
+- becomes a special string(JSON string) after we stringify something. so ""
+  - keys are the individual pieces inside the special string like elements in an array
+    - when we use localStorage. localStorage itself is an object so after we stringify the special string (JSON string) becomes a property inside the localStorage object. The keys 
+
+
+    localStorage {
+      myStuff: "stringifiedItems that has 'keys(like elements in array)' keys hold the object data"
+    }
